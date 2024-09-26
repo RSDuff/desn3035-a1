@@ -6,27 +6,37 @@
 .container{
     /* alignment stuff */
     margin: 5% 10% 0px;
+    height: 100vh;
 }
 .headerContainer{
     display: flex;
-    height: 6vh;
-    background-color: antiquewhite;
+    height: 10vh;
+    background-color: rgb(191, 235, 185);
+    
 }
 
-.headerh1{
-    font-size: 2rem;
+#myname{
+    font-size: 3rem;
+    align-self: flex-end;
+    margin-left: 10px;
 }
 
-a {
+.navbarhyperlink{
     color: white;
+    align-self: flex-end;
+    
 }
 
-.headernavbar nav{
+.headernavbar{
+    flex-direction: row;
+    justify-self: flex-end;
+    align-self: flex-end;
     /* text stuff */
     background-color: black;
     height: 5vh;
     color: white;
-    text-decoration: dashed; 
+    text-decoration: dashed;
+
 }
 
 .headernavbar a:hover{
@@ -36,11 +46,6 @@ a {
 .headernavbar ul {
     list-style-type: none;
     justify-content: right;
-}
-
-li {
-    float: left;
-    
 }
 
 
