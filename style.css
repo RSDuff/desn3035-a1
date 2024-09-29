@@ -1,55 +1,136 @@
-* {
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
+ body{
+    margin: 0;
+    background-color: rgb(243, 243, 202);
+ }
 
 .container{
     /* alignment stuff */
-    margin: 5% 10% 0px;
+    margin: 0% 10% 0% 10%;
     height: 100vh;
+    
 }
 .headerContainer{
     display: flex;
+    margin-top: 0;
+    padding-left: 5vw;
+    padding-right: 5vw;
     height: 10vh;
-    background-color: rgb(191, 235, 185);
-    
+    background-color: rgb(92, 155, 84);
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
 }
 
 #myname{
+    margin: 0;
     font-size: 3rem;
     align-self: flex-end;
     margin-left: 10px;
+    font-family: Helvetica, sans-serif;
 }
 
 .navbarhyperlink{
-    color: white;
+    color: black;
+    font-family: Helvetica, sans-serif;
     align-self: flex-end;
-    
+    background-color: rgb(243, 243, 202);
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    font-size: 1.5em;
+    padding: 5px 5px 1px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border: 1.5px;
+    border-style: solid solid none solid; 
 }
 
 .headernavbar{
-    flex-direction: row;
-    justify-self: flex-end;
+    margin-left: auto;
+    border-end-end-radius: 20px;
     align-self: flex-end;
-    /* text stuff */
-    background-color: black;
-    height: 5vh;
-    color: white;
-    text-decoration: dashed;
-
 }
 
 .headernavbar a:hover{
-    color: rgb(248, 248, 76);
+    color: rgb(38, 83, 38);
+    font-weight: bold;
 }
 
-.headernavbar ul {
-    list-style-type: none;
-    justify-content: right;
+.mainContainer{
+    display: flex;
+    margin-top:1%;
+    border-radius: 5px 5px 5px 5px;
+    border: 1.5px;
+    /* border-style: dotted; */
+    width:100%;
+    height:100vh;
+    position: relative;
+
+    flex-flow: row wrap;
+    align-content: flex-start;
+    gap: 15px;
+}
+.projectcards{
+    display: flex;
+    background-color:white;
+    border-style: dotted;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 100%;
+    /* height: 30vh; */
+
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+#project1{
+    width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+    #project2{
+        width: 40%;
+    }
+    
+    #project3{
+        width: 55%;
+    }
 }
 
 
-.main{
-    margin: 20px;
 
+#contactme{
+    width:100%;
+    text-align: center;
+}
+
+#contactme h3{
+    width:100%;
+}
+
+#contactme p{
+    width: 100%;
+}
+
+.projectcardheader{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+.projectcardtext{
+    text-align: left;
+    width:40%
+}
+
+.projectcardimg{
+    width:40%;
+    max-width:30%;
+    max-height: 100%;
+    object-fit: cover;
 }
